@@ -8,6 +8,7 @@ public class Hello
     private const string englishHelloPrefix = "Hello, ";
 
     public Hello(string name) {
-        this.message = englishHelloPrefix + name;
+        var who = string.IsNullOrEmpty(name) ? "World" : name;
+        this.message = englishHelloPrefix + who;
     }
 }

@@ -8,11 +8,6 @@ public class HelloTest
 {
     Hello hello;
 
-    [SetUp]
-    public void Setup() {
-        hello = new Hello("Chris");
-    }
-
     // A Test behaves as an ordinary method
     [Test]
     public void SayHelloToPeople()

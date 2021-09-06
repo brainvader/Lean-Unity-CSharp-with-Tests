@@ -15,7 +15,7 @@ public class HelloTest
 
     // A Test behaves as an ordinary method
     [Test]
-    public void NewTestScriptSimplePasses()
+    public void SayHelloToPeople()
     {
         var want = "hi";
         var got = hello.message;

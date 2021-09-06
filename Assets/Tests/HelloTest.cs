@@ -6,12 +6,11 @@ using UnityEngine.TestTools;
 
 public class HelloTest
 {
-    Hello hello;
-
     // A Test behaves as an ordinary method
     [Test]
     public void SayHelloToPeople()
     {
+        var hello = new Hello("Chris");
         var want = "Hello, Chris";
         var got = hello.message;
         // Use the Assert class to test conditions
@@ -20,9 +19,10 @@ public class HelloTest
 
     [Test]
     public void SayHelloWorldWhenEmptyString() {
+        var hello = new Hello("");
         var got = hello.message;
         var want = "Hello, World";
 
-        Assert.AreEqual(got, want);
+        Assert.AreEqual(want, got);
     }
 }

@@ -17,7 +17,9 @@ public class HelloTest
     [Test]
     public void NewTestScriptSimplePasses()
     {
+        var want = "hi";
+        var got = hello.message;
         // Use the Assert class to test conditions
-        Assert.AreEqual("hi", hello.message);
+        Assert.AreEqual(want, got);
     }
 }

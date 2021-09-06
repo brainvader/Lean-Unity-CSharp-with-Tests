@@ -17,7 +17,7 @@ public class HelloTest
     [Test]
     public void SayHelloToPeople()
     {
-        var want = "hi";
+        var want = "Hello, Chris";
         var got = hello.message;
         // Use the Assert class to test conditions
         Assert.AreEqual(want, got);

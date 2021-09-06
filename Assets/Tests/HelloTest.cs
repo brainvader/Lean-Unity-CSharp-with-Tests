@@ -4,7 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class NewTestScript
+public class HelloTest
 {
     Hello hello1;
 

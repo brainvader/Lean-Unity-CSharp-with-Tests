@@ -6,13 +6,17 @@ using UnityEngine.TestTools;
 
 public class HelloTest
 {
-    Hello hello1;
+    Hello hello;
+
+    [SetUp]
+    public void Setup() {
+        hello = new Hello("hello");
+    }
 
     // A Test behaves as an ordinary method
     [Test]
     public void NewTestScriptSimplePasses()
     {
-        var hello = new Hello("hello");
         // Use the Assert class to test conditions
         Assert.AreEqual("hi", hello.message);
     }

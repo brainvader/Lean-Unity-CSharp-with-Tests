@@ -10,7 +10,7 @@ public class HelloTest
 
     [SetUp]
     public void Setup() {
-        hello = new Hello("hello");
+        hello = new Hello("Chris");
     }
 
     // A Test behaves as an ordinary method

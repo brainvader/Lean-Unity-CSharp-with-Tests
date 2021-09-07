@@ -29,7 +29,7 @@ public class HelloTest {
         var hello = new Hello("", "Spanish");
 
         var got = hello.message;
-        var want = "Hola, ";
+        var want = "Hola, World";
 
         Assert.AreEqual(want, got);
     }

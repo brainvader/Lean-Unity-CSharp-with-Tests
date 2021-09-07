@@ -5,6 +5,7 @@ using UnityEngine;
 public class Hello 
 {
     public string message;
+    private const string spanish = "Spanish";
     private const string englishHelloPrefix = "Hello, ";
     private const string spanishHelloPrefix = "Hola, ";
 

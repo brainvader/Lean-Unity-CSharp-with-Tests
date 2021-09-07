@@ -25,4 +25,14 @@ public class HelloTest
 
         Assert.AreEqual(want, got);
     }
+
+    [Test]
+    public void SayHelloInSpanish() {
+        var hello = new Hello("", "Spanish");
+        
+        var got = hello.message;
+        var want = "Hola, ";
+
+        Assert.AreEqual(want, got);
+    }
 }

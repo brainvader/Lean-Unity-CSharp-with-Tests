@@ -11,10 +11,19 @@ public class Hello {
     public Hello(string name, string language = "English") {
         var who = string.IsNullOrEmpty(name) ? "World" : name;
 
+        var prefix = englishHelloPrefix;
+
+        switch (language) {
+            case spanish:
+                prefix = spanishHelloPrefix;
+                break;
+            default:
+                break;
+        }
         if (language == spanish) {
-            this.message = spanishHelloPrefix + who;
+            this.message = prefix + who;
         } else {
-            this.message = englishHelloPrefix + who;
+            this.message = prefix + who;
         }
     }
 }

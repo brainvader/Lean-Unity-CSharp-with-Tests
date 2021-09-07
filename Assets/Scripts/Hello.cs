@@ -9,7 +9,7 @@ public class Hello
     private const string englishHelloPrefix = "Hello, ";
     private const string spanishHelloPrefix = "Hola, ";
 
-    public Hello(string name) {
+    public Hello(string name, string language = "English") {
         var who = string.IsNullOrEmpty(name) ? "World" : name;
         this.message = englishHelloPrefix + who;
     }

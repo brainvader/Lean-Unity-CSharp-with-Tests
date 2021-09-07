@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hello 
-{
+public class Hello {
     public string message;
     private const string spanish = "Spanish";
     private const string englishHelloPrefix = "Hello, ";
@@ -11,6 +10,11 @@ public class Hello
 
     public Hello(string name, string language = "English") {
         var who = string.IsNullOrEmpty(name) ? "World" : name;
-        this.message = englishHelloPrefix + who;
+
+        if (language == spanish) {
+            this.message = spanishHelloPrefix + who;
+        } else {
+            this.message = englishHelloPrefix + who;
+        }
     }
 }

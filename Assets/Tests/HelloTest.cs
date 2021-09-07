@@ -4,12 +4,10 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class HelloTest
-{
+public class HelloTest {
     // A Test behaves as an ordinary method
     [Test]
-    public void SayHelloToPeople()
-    {
+    public void SayHelloToPeople() {
         var hello = new Hello("Chris");
         var want = "Hello, Chris";
         var got = hello.message;
@@ -29,7 +27,7 @@ public class HelloTest
     [Test]
     public void SayHelloInSpanish() {
         var hello = new Hello("", "Spanish");
-        
+
         var got = hello.message;
         var want = "Hola, ";
 
